@@ -72,7 +72,7 @@ const Login = () => {
                     </div>
                 </form>
                 {/* Footer */}
-                <footer className='flex flex-col-reverse md:flex-row items-center justify-between text-sm text-gray-600 font-semibold'>
+                <footer className='flex flex-col-reverse md:flex-row items-center justify-between gap-2 text-sm text-gray-600 font-semibold'>
                     <p>&copy; Hysabat Solutions {new Date().getFullYear()}</p>
                     <a href='mailto:sales@hysabat.com' className='flex gap-1'><HiOutlineMail className='text-xl' /> sales@hysabat.com</a>
                 </footer>
