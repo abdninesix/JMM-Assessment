@@ -55,7 +55,7 @@ This repository contains a **Login** component built using **React** and **Zod**
    npm start
    ```
 
-   This will run the app on `http://localhost:3000`.
+   This will run the app on `http://localhost:5173`.
 
 ---
 
