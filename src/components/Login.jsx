@@ -34,7 +34,7 @@ const Login = () => {
             {/* Left section */}
             <section className='h-full w-full lg:w-1/2 flex flex-col p-4 justify-between'>
                 {/* Logo */}
-                <a href='/' className='w-30 lg:w-auto'>
+                <a href='/' className='w-30 lg:w-fit'>
                     <img src='/logo2.svg' alt='logo' />
                 </a>
                 {/* Login form */}
