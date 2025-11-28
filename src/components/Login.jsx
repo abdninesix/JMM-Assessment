@@ -3,12 +3,12 @@ import { HiOutlineMail } from 'react-icons/hi'
 
 const Login = () => {
     return (
-        <div className='h-screen flex gap-4 p-4'>
+        <div className='h-screen flex p-4'>
             {/* Right section */}
-            <section className='flex flex-col flex-1 justify-between'>
+            <section className='flex flex-col flex-1 p-4 justify-between'>
                 {/* Logo */}
                 <header className='text-center'>
-                    <img src='/logo2.svg' alt='logo' className='p-2' />
+                    <img src='/logo2.svg' alt='logo'/>
                 </header>
                 {/* Login form */}
                 <form className='border'>
@@ -17,12 +17,16 @@ const Login = () => {
                 {/* Footer */}
                 <footer className='flex justify-between text-sm text-gray-500 font-semibold'>
                     <p>&copy; Hysabat Solutions {new Date().getFullYear()}</p>
-                    <p><HiOutlineMail /> sales@hysabat.com</p>
+                    <p className='flex items-center gap-2'><HiOutlineMail className='text-xl' /> sales@hysabat.com</p>
                 </footer>
             </section>
 
             {/* Left section */}
-            <section className='flex-1 bg-blue-500 rounded-xl'></section>
+            <section className='flex-1 flex items-center justify-center bg-linear-to-br from-blue-400 to-blue-900 rounded-xl'>
+                <div className=''>
+                    Hewlo
+                </div>
+            </section>
         </div>
     )
 }
