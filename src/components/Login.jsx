@@ -1,5 +1,5 @@
 import React from 'react'
-import { HiOutlineMail } from 'react-icons/hi'
+import { HiOutlineLockClosed, HiOutlineMail, HiOutlineUser } from 'react-icons/hi'
 import RightSection from './RightSection'
 
 const Login = () => {
@@ -12,11 +12,39 @@ const Login = () => {
                     <img src='/logo2.svg' alt='logo' />
                 </header>
                 {/* Login form */}
-                <form className='border'>
-                    sometging
+                <form className='flex flex-col items-center'>
+                    <div className='w-1/2 flex flex-col gap-4 text-gray-500'>
+
+                        <div className='space-y-2'>
+                            <h1 className='text-3xl font-bold text-black'>Log In</h1>
+                            <p>Login to get back to your Hysabat account.</p>
+                        </div>
+
+                        <div>
+                            <label htmlFor='username' className='text-sm font-bold'>Username</label>
+                            <div className='flex items-center gap-2 p-2 border-2 border-gray-300 focus-within:border-sky-500 rounded-md'>
+                                <HiOutlineUser className='text-xl' />
+                                <input type='text' placeholder='Enter username' id='username' className='w-full outline-none' />
+                            </div>
+                        </div>
+
+                        <div>
+                            <label htmlFor='password' className='text-sm font-bold'>Password</label>
+                            <div className='flex items-center gap-2 p-2 border-2 border-gray-300 focus-within:border-sky-500 rounded-md'>
+                                <HiOutlineLockClosed className='text-xl' />
+                                <input type='password' placeholder='Create a password' id='password' className='w-full outline-none' />
+                            </div>
+                        </div>
+
+                        <button type='submit' className='bg-sky-500 text-white font-semibold px-4 py-2 rounded-lg'>Login</button>
+
+                        <p className='text-center text-sm'>
+                            Don't have an account? <a href='#' className='text-sky-500'>Sign up</a>
+                        </p>
+                    </div>
                 </form>
                 {/* Footer */}
-                <footer className='flex justify-between text-sm text-gray-500 font-semibold'>
+                <footer className='flex justify-between text-sm text-gray-600 font-semibold'>
                     <p>&copy; Hysabat Solutions {new Date().getFullYear()}</p>
                     <p className='flex items-center gap-2'><HiOutlineMail className='text-xl' /> sales@hysabat.com</p>
                 </footer>
