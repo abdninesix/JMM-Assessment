@@ -30,16 +30,16 @@ const Login = () => {
 
 
     return (
-        <div className='h-screen flex p-4'>
+        <div className='h-screen flex flex-col lg:flex-row p-4'>
             {/* Left section */}
-            <section className='w-1/2 flex flex-col p-4 justify-between'>
+            <section className='w-full lg:w-1/2 flex flex-col p-4 justify-between'>
                 {/* Logo */}
                 <a href='/' className='text-center'>
                     <img src='/logo2.svg' alt='logo' />
                 </a>
                 {/* Login form */}
                 <form onSubmit={handleSubmit} className='flex flex-col items-center'>
-                    <div className='w-1/2 flex flex-col gap-4 text-gray-600'>
+                    <div className='w-full lg:w-1/2 flex flex-col gap-4 text-gray-600'>
 
                         <div className='space-y-2'>
                             <h1 className='text-3xl font-bold text-black'>Log In</h1>
