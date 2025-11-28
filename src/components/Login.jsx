@@ -8,9 +8,9 @@ const Login = () => {
             {/* Left section */}
             <section className='w-1/2 flex flex-col p-4 justify-between'>
                 {/* Logo */}
-                <header className='text-center'>
+                <a href='#' className='text-center'>
                     <img src='/logo2.svg' alt='logo' />
-                </header>
+                </a>
                 {/* Login form */}
                 <form className='flex flex-col items-center'>
                     <div className='w-1/2 flex flex-col gap-4 text-gray-600'>
