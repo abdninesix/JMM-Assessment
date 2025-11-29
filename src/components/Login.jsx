@@ -67,7 +67,7 @@ const Login = () => {
                         <button type='submit' className='bg-sky-500 hover:opacity-90 cursor-pointer text-white font-semibold py-2 rounded-lg'>Login</button>
 
                         <p className='text-center text-sm'>
-                            Don't have an account? <a href='/signup' className='text-sky-500'>Sign up</a>
+                            Don't have an account? <a href='/#' className='text-sky-500'>Sign up</a>
                         </p>
                     </div>
                 </form>
